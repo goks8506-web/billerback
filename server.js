@@ -16,10 +16,10 @@ const upload = multer({
 });
 
 // Routes
-app.use('/api/inv', require('./Router/Inventory.router'));
-app.use('/api/admin', require('./Router/Admin.router'));
-app.use('/api/book', require('./Router/Booking.router'));
-app.use('/api/com', require('./Router/Company.router'));
+app.use('/api', require('./Router/Inventory.router'));
+app.use('/api', require('./Router/Admin.router'));
+app.use('/api', require('./Router/Booking.router'));
+app.use('/api', require('./Router/Company.router'));
 
 // Error handler
 app.use((err, req, res, next) => {
