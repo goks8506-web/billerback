@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const multer = require('multer');
-const { storage } = require('../config/cloudinary');
+const { storage } = require('../Config/cloudinary');
 
 const pool = new Pool({
   user: process.env.PGUSER,
