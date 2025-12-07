@@ -3,6 +3,7 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 require('dotenv').config();
+const { storage } = require('./Config/cloudinary');
 
 const app = express();
 
